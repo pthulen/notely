@@ -7,6 +7,8 @@ const requireCredits = require('../middlewares/requireCredits');
 const Mailer = require('../services/Mailer');
 const surveyTemplate = require('../services/emailTemplates/surveyTemplates');
 
+const thankYou = require('../services/emailTemplates/thankYouPage');
+
 const Survey = mongoose.model('surveys');
 
 module.exports = app => {
@@ -18,7 +20,7 @@ module.exports = app => {
     });
 
     app.get('/api/surveys/:surveyId/:choice', (req, res) => {
-        res.send('<html><h1 style="color:blue;">Thanks so much for voting!</h1></html>');
+        res.send(thankYou);
     })
 
     //webhook handler
