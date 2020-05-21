@@ -98,4 +98,4 @@ const thankYouPage = `
         </html> 
 `;
 
-export default thankYouPage;
+module.exports = thankYouPage;
