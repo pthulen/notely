@@ -19,8 +19,10 @@ class SurveyNew extends Component {
     }
     render() {
         return (
-            <div>
-                {this.renderContent()}
+            <div style={{ height: "40em" }}>
+                <div >
+                    {this.renderContent()}
+                </div>
             </div>
         );
     }

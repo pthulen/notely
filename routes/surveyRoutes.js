@@ -18,7 +18,7 @@ module.exports = app => {
     });
 
     app.get('/api/surveys/:surveyId/:choice', (req, res) => {
-        res.send('Thanks for voting!');
+        res.send('<html><h1 style="color:blue;">Thanks so much for voting!</h1></html>');
     })
 
     //webhook handler

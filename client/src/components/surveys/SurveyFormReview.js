@@ -8,7 +8,7 @@ import * as actions from '../../actions';
 const SurveyFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
     const reviewFields = _.map(formFields, ({ name, label }) => {
         return (
-            <div key={name}>
+            <div key={name} style={{ margin: "1.5em"}}>
                 <label>{label}</label>
                 <div>
                     {formValues[name]}
@@ -17,7 +17,7 @@ const SurveyFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
         )
     })
     return (
-        <div>
+        <div style={{ backgroundColor: "white", marginTop: "4em" }}>
             <h5>Please confirm your entries</h5>
             {reviewFields}
             <button className="yellow darken-3 btn-flat"

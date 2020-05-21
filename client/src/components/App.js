@@ -7,7 +7,18 @@ import Header from './Header';
 import Landing from './Landing';
 import Dashboard from './Dashboard';
 import SurveyNew from './surveys/SurveyNew';
+import { autofill } from 'redux-form';
 
+
+var sectionStyle = {
+    width: "100%",
+    height: "auto",
+    backgroundImage: `url(https://i.imgur.com/slu0z1B.jpg)`,
+    backgroundPosition: "center center",
+	backgroundAttachment: "fixed",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat"
+  };
 
 
 class App extends Component {
@@ -17,7 +28,7 @@ class App extends Component {
     render() {
         return (
                 <BrowserRouter>
-                    <div className="container">
+                    <div className="container"  style={ sectionStyle }>
                         <Header />
                         <Route exact path="/" component={Landing} />
                         <Route exact path="/surveys" component={Dashboard} />
