@@ -7,7 +7,6 @@ import Header from './Header';
 import Landing from './Landing';
 import Dashboard from './Dashboard';
 import SurveyNew from './surveys/SurveyNew';
-import { autofill } from 'redux-form';
 
 
 var sectionStyle = {
